@@ -1,0 +1,33 @@
+h1{
+	color: white
+}
+
+body{
+	background-color: #3b6dff;
+
+
+}
+
+a[tipo="menu"]{
+	color: black
+	
+}
+
+a[tipo="cabeçalho"]{
+	color: white
+	
+}
+
+td[id="menu"]{
+	background-color: #f8fff2;
+border: 2px solid #526aff;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+
+}
+
+button{
+
+}
