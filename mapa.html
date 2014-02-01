@@ -1,28 +1,124 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset=utf-8>
-		<script src="js/jquery-2.0.3.min.js"></script>
-		<script src="js/jquery.mobile-1.4.0.js"></script>
-		<script src="js/jquery.ui.datepicker.js"></script>
-		<script src="js/jquery.mobile.datepicker.js"></script>
-		<link rel="stylesheet" type="text/css" href="principal.css">
-		
-		
-		<title>Campus LoveLace</title>
-	</head>
+<head>
+    
+</head>
+<script>
+    $(function(){
+    $("#menu").menu();
+});
+</script>
+<style>
+    a[tipo="cabecalho"]{
+    color:white;
+}
+p[tipo="popup"]{
+    color:white;
+}
+    div[id="fundoPopup"]{
+    
+    background-color: #141414;
+border: 2px solid #999999;
+    display:none;
+     
+    position: fixed;
+	    display:none;
+	    height:100%;
+	    width:100%;	   
+	    top:0px;
+	    left:0px;
 
-	<body role="application">
-		<head>
-			<a tipo="cabeçalho">Legenda</a>
-		</head>
-		<div>
-			<figure>
+}
 
-				<img src="imgs/mapa.jpg">
+div[id="fundoPopup2"]{
+    
+    background-color: #141414;
+border: 2px solid #999999;
+    display:none;
+     
+    position: fixed;
+	    display:none;
+	    height:100%;
+	    width:100%;	   
+	    top:0px;
+	    left:0px;
 
-			</figure>
-		</div>
-	</body>
+}
 
-</html>
+div[id="fundoPopup3"]{
+    
+    background-color: #141414;
+border: 2px solid #999999;
+    display:none;
+     
+    position: fixed;
+	    display:none;
+	    height:100%;
+	    width:100%;	   
+	    top:0px;
+	    left:0px;
+
+}
+
+</style>
+<ul id="menu">
+    <li><a tipo="menu" onclick="carregaPopup('#conteudoLegenda','#fundoPopup')"><span class="ui-icon-note"></span>Legenda</a></li>
+    <li><a tipo="menu" onclick="window.location.reload();"><span class="ui-icon-home"></span>Principal</a></li>
+</ul>
+<div id="fundoPopup"   >
+    <a tipo="cabecalho" onclick="fecharPopup('#fundoPopup','#conteudoLegenda')">X</a>
+   <a tipo="cabecalho">|</a>
+    <a tipo="cabecalho" onclick="voltaPopup('#fundoPopup','#fundoPopup2')">Proximo</a>
+     <p tipo="popup">1. Arena</p>	
+    <p tipo="popup">2. Credenciamento</p>
+    <p tipo="popup">3. Credenciamento Camping</p>	
+            <p tipo="popup">4. Palco de Conteúdos</p>
+<p tipo="popup">5. Palco Principal	</p>
+            <p tipo="popup">6. Cérebro</p>
+<p tipo="popup">7. Assistència Técnica	</p>
+            <p tipo="popup">8. Registro de Equipamentos</p>
+<p tipo="popup">9. Workshops</p>
+    <p tipo="popup">10. Startup & Makers</p>
+<p tipo="popup">11. Cross Space</p>
+    
+</div>
+
+<div id="fundoPopup2">
+    <a tipo="cabecalho" onclick="voltaPopup('#fundoPopup','#fundoPopup2')">Volta</a>
+    <a tipo="cabecalho">|</a>
+    <a tipo="cabecalho" onclick="mostraPopup3('#fundoPopup2','#fundoPopup3')">Proximo</a>
+    <p tipo="popup">12. Imprensa</p>
+<p tipo="popup">13. Telefónica</p>
+    <p tipo="popup">14. Posto Médico</p>
+<p tipo="popup">15. Games</p>
+    <p tipo="popup">16. Simuladores</p>
+<p tipo="popup">17. Camping</p>
+    <p tipo="popup">18. Open Campus</p>
+<p tipo="popup">19.Praça de Alimentação</p>
+    <p tipo="popup">20. Catering</p>
+<p tipo="popup">21. Guarda Volumes</p>
+    
+</div>
+
+<div id="fundoPopup3">
+    <a tipo="cabecalho" onclick="mostraPopup3('#fundoPopup3','#fundoPopup2')">Volta</a>
+    <p tipo="popup">22. Fi-Ware</p>
+<p tipo="popup">23. Banheiro</p>
+    <p tipo="popup">24. Duchas</p>
+<p tipo="popup">25. Sala VIP</p>
+    <p tipo="popup">26. Sala de Palestrantes</p>
+<p tipo="popup">27. Sala Eventos	 </p>
+ 
+<p tipo="popup">A. Entrada para credenciamento</p>
+    <p tipo="popup">B. Entrada para credenciamento</p>
+</div>
+
+<div id="areaMapa">
+    <figure>
+
+        <img align="left" tipo="mapa" src="imgs/mapa.jpg"/>
+
+    </figure>
+</div>
+
+
+
+        

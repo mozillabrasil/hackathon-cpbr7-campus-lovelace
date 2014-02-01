@@ -2,68 +2,56 @@
 <html>
 	<head>
 		<meta charset=utf-8>
-		<script src="js/jquery-2.0.3.min.js"></script>
-		<script src="js/jquery.mobile-1.4.0.js"></script>
-		<script src="js/jquery.ui.datepicker.js"></script>
-		<script src="js/jquery.mobile.datepicker.js"></script>
-		<link rel="stylesheet" type="text/css" href="principal.css">
+        <link type="text/css" href="js/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
 		
-		
-		<title>Campus LoveLace</title>
+		<title>Campus LoveLace</title>        
+         
+        <figure align="center">
+
+            <img tipo="logo" src="imgs/logoCampus.jpg">
+             
+        </figure>
+        
 	</head>
+    <script>
+    $(function(){
+    $("#menu").menu();
+});
+</script>
+	<style>
+        .ui-menu { width: 300px; 
+        background-color:white;
+            
+        border-color:#3b6dff;
+        border-radius:9px;
+        font-family:cursive;
+        }
+        body{
+            font-family:cursive;
+	background-color: #3b6dff;
+	width: 305px;
+    height:300px;
+    font-family:cursive;        
 
-	<body role="application">
+}
+        img[tipo="logo"]{
+    border: 2px solid #3b6dff;
+-moz-border-radius: 9px;
+-webkit-border-radius: 9px;
+border-radius: 9px;
 
-		<section role="region" id="tela-principal">
-			<header>
-				<figure align="center">
+}
+    </style>
+        
+    
+    
+    <div id="tela">
+        
+    </div>
 
-				<img src="imgs/logoCampus.jpg">
-
-			</figure>
-			</header>
-			<table>
-				<tr>
-					<td id="menu">
-						<form>
-							<a tipo="menu" href="mapa.html">Mapa do Evento</a>
-							<a tipo="menu">Agenda</a>
-						</form>
-					</td>
-					<td>
-						<form>
-							<a class="twitter-timeline" href="https://twitter.com/search?q=%23cpbr7" data-widget-id="428730017711800320">Tweets sobre "#cpbr7"</a>
-						</form>
-					</td>
-				</tr>
-			</table>
-		<!--<table>
-			<tr>
-				<!--coluna do menu
-				<td>
-					<table>
-						<tr>
-							<td>
-								<a>Mapa do Evento<a/>
-							</td>
-
-						</tr>
-						<tr>
-							<td>
-								<a>Eventos<a/>
-							</td>
-						</tr>
-					</table>
-					
-				</td>
-				<!--coluna dos tweets
-				<td>
-					<a class="twitter-timeline" href="https://twitter.com/search?q=%23cpbr7" data-widget-id="428730017711800320">Tweets sobre "#cpbr7"</a>
-				</td>
-			</tr>
-		</table>-->
-
- 		</section>
-	</body>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+       
+     <script src="js/app/modulo.js"></script>
+	
 </html>

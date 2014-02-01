@@ -1,13 +1,8 @@
 {
   "name": "Campus Lovelace",
   "version": "1.0",
-  "description": "A simple memo taking app",
+  "description": "Interação para Campus Party.",
   "launch_path": "/index.html",
-  "permissions": {
-    "storage": {
-      "description": "Required for storing and retrieving notes."
-      }
-  },
   "developer": {
     "name": "Roselma Mendes",
     "url": "http://roselmamendes.com"
